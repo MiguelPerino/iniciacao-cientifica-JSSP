@@ -123,6 +123,10 @@ def resolve_todas_instancias(pasta_instancias, prioridade_func, caminho_csv_deta
     cronograma_completo = []  # vai acumular (nome_instancia, op) de todas
 
     for nome in instancias:
+        if nome.startswith('.'):
+            # ignora arquivos ocultos/de sistema, ex: .gitkeep, .DS_Store
+            continue
+
         caminho = os.path.join(pasta_instancias, nome)
         if not os.path.isfile(caminho):
             continue
