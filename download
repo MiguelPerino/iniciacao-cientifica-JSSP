@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Resultados gerados pelo código (não precisa versionar, é gerado de novo a cada execução)
+*_detalhado.csv
+*_resumo.csv
+solucoes*/
+
+# VS Code
+.vscode/
