@@ -148,7 +148,7 @@ def resolve_todas_instancias(pasta_instancias, prioridade_func, caminho_csv_deta
 def salvar_resumo_csv(resumo, caminho_csv):
     """
     Salva um único CSV com o makespan de cada instância (uma linha por
-    instância). Útil pra ter uma visão geral rápida de tudo que rodou.
+    instância)
     """
     with open(caminho_csv, 'w', newline='', encoding='utf-8-sig') as f:
         writer = csv.writer(f, delimiter=';')
